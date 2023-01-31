@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Keycode Info</title>
+    </head>
+    <body>
+        <div class="position">
+            <div class="display">
+                <div class="wrap" aria-live="polite" aria-atomic="true">
+                     <p class="huge" id="keyCode">0</p>
+                        <div class="cards">
+                            <div class="card item-key">
+                                <div class="card-header">
+                                    <span>event.key</span>
+                                </div>
+                                <div class="card-main" tableindex="0" role="button">
+                                     <div class="main-description" id="key">a</div>
+                                </div>
+                                <footer>
+                                    <p>The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.</p>
+                                </footer>
+                            </div>
+                            <div class="card item-location">
+                                <div class="card-header">
+                                    <span>event.location</span>
+                                </div>
+                                <div class="card-main" tableindex="0" role="button">
+                                    <div class="main-description">General keys
+                                        <small>
+                                            (
+                                        <!---->
+                                            0
+                                        <!---->
+                                        )
+                                        </small>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <p>Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts. 
+                                        <!---->
+
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location"
+                                         target="_blank" rel="noopener noreferrer" id="location" >More here</a>
+                                        </p>
+                                </footer>
+                            </div>
+                            <div class="card item-code">
+                                <div class="card-header">
+                                    <span>event.code</span>
+                                </div>
+                                <div class="card-main" tableindex="0" role="button">
+                                    <div class="main-description" id="code">ControlLeft</div>
+                                </div>
+                                <footer>
+                                    <p>The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.</p>
+                                </footer>
+                            </div>
+                            <div class="card item-which">
+                                <div class="card-header">
+                                    <span>event.which</span>
+                                </div>
+                                <div class="card-main" tableindex="0" role="button">
+                                    <div class="main-description" id="which"></div>
+                                </div>
+                                <footer>
+                                    <p>event.which and event.keyCode are (deprecated) in modern browsers. Use .key or .code instead.</p>
+                                </footer>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
